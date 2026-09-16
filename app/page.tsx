@@ -1,3 +1,10 @@
+const whatsappNumber = "919999999999";
+
+const whatsappMessage = encodeURIComponent(
+  "Hi Flovia, I want to know more about your lead capture and follow-up system."
+);
+
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 const services = [
   {
     number: "01",
@@ -44,23 +51,34 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#f8fafc] text-slate-950">
       {/* Navbar */}
-      <header className="border-b border-slate-200/70 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8">
-          <a href="#" className="flex items-center gap-2.5">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-950 text-sm font-bold text-white">
-              F
-            </div>
-            <span className="text-lg font-bold tracking-tight">Flovia</span>
-          </a>
+      <header className="border-b border-slate-800 bg-slate-950 text-white">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
 
           <a
-            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+            href="/"
+            className="text-xl font-bold tracking-tight text-white"
           >
-            Get a Demo
+            Flovia
           </a>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="/offer"
+              className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-slate-800"
+            >
+              View Our Offer
+            </a>
+
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-slate-950 transition hover:bg-slate-200"
+            >
+              Get a Demo
+            </a>
+          </div>
+
         </div>
       </header>
 
@@ -347,6 +365,130 @@ export default function Home() {
           >
             Get a Demo on WhatsApp →
           </a>
+        </div>
+      </section>
+      {/* Client / Work */}
+      <section className="border-y border-slate-100 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="mb-12">
+            <p className="text-sm font-semibold uppercase tracking-wider text-slate-500">
+              Selected Client
+            </p>
+
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              Built for GRAM SCS
+            </h2>
+
+            <p className="mt-4 max-w-2xl text-slate-600">
+              A full-stack logistics website and business management system
+              built for a New Delhi-based logistics company.
+            </p>
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+            {/* Project Preview */}
+            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+              <div className="border-b border-slate-100 px-6 py-4">
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-slate-900">
+                    GRAM Supply Chain Solutions
+                  </span>
+
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                    Logistics
+                  </span>
+                </div>
+              </div>
+
+              <div className="bg-slate-100 p-6">
+                <div className="rounded-2xl border border-slate-200 bg-white p-6">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+                    Integrated Logistics
+                  </p>
+
+                  <h3 className="mt-3 text-2xl font-bold text-slate-900">
+                    Supply Chain Solutions
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-6 text-slate-600">
+                    Warehousing, transportation, freight forwarding,
+                    automation and shipment tracking.
+                  </p>
+
+                  <div className="mt-6 grid grid-cols-2 gap-3">
+                    <div className="rounded-xl bg-slate-50 p-3 text-sm font-medium">
+                      Contact Management
+                    </div>
+
+                    <div className="rounded-xl bg-slate-50 p-3 text-sm font-medium">
+                      Shipment Tracking
+                    </div>
+
+                    <div className="rounded-xl bg-slate-50 p-3 text-sm font-medium">
+                      Service Management
+                    </div>
+
+                    <div className="rounded-xl bg-slate-50 p-3 text-sm font-medium">
+                      Full-Stack System
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Details */}
+            <div>
+              <h3 className="text-2xl font-bold text-slate-900">
+                Full-stack website for a logistics business
+              </h3>
+
+              <p className="mt-4 leading-7 text-slate-600">
+                We built a complete business website for GRAM SCS with
+                structured service pages, customer contact functionality,
+                logistics information and shipment tracking.
+              </p>
+
+              <div className="mt-6 space-y-3">
+                {[
+                  "Full-stack website development",
+                  "Contact & enquiry management",
+                  "Shipment tracking system",
+                  "Logistics service presentation",
+                  "Responsive business interface",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-950 text-xs text-white">
+                      ✓
+                    </span>
+
+                    <span className="text-sm font-medium text-slate-700">
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="https://gram-scs.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+              >
+                View Live Website
+              </a>
+            </div>
+          </div>
+
+          {/* Client Review */}
+          <div className="mt-10 rounded-3xl border border-slate-200 bg-white p-8">
+            <p className="text-lg leading-8 text-slate-700">
+              “⭐⭐⭐⭐⭐ Exceptional Full-Stack Development<br /> – A Game-Changer for Our Logistics Business!Working with Flovia systems to build our logistics platform has been an absolute game-changer. We approached them with a complex set of requirements, needing a comprehensive, full-stack solution that could handle everything from high-volume operations to customer acquisition. They delivered beyond our expectations.<br /><br />They seamlessly integrated a robust, real-time shipment tracking system that gives our clients total visibility over their cargo, which has drastically reduced our customer service inquiries. The built-in communication tools keep our dispatchers, drivers, and clients connected effortlessly, closing the gap on operational delays. On top of that, the lead generation architecture they implemented is already capturing and converting high-quality inbound shipping requests, helping us grow our pipeline from day one.<br /><br />The platform is lightning-fast, incredibly secure, and features a clean, intuitive interface that our team and customers love using. If you need a development team that truly understands complex workflows and transforms them into elegant, powerful digital solutions, look no further than Flovia systems.”
+            </p>
+
+            <p className="mt-4 text-sm font-semibold text-slate-900">
+              — GRAM SCS
+            </p>
+          </div>
         </div>
       </section>
 
