@@ -1,4 +1,5 @@
-const whatsappNumber = "919999999999";
+import Link from "next/link";
+const whatsappNumber = "+917015505745";
 
 const whatsappMessage = encodeURIComponent(
     "Hi Flovia, I want to know more about your lead capture and follow-up system."
@@ -43,12 +44,12 @@ export default function OfferPage() {
             {/* Navbar */}
             <header className="border-b border-slate-800 bg-slate-950 text-white">
                 <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-                    <a
+                    <Link
                         href="/"
                         className="text-xl font-bold tracking-tight text-white"
                     >
                         Flovia
-                    </a>
+                    </Link>
 
                     <nav className="flex items-center gap-3">
                         <a
@@ -64,7 +65,7 @@ export default function OfferPage() {
                             rel="noopener noreferrer"
                             className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
                         >
-                            Get a Demo
+                            Get a Demo on WhatsApp
                         </a>
                     </nav>
                 </div>
@@ -97,12 +98,12 @@ export default function OfferPage() {
                             Get Started on WhatsApp
                         </a>
 
-                        <a
+                        <Link
                             href="/"
                             className="rounded-full border border-slate-200 px-7 py-3.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
                         >
                             Back to Flovia
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -248,6 +249,9 @@ export default function OfferPage() {
                     </a>
                 </div>
             </section>
+
+
+
 
             {/* Footer */}
             <footer className="border-t border-slate-100">
