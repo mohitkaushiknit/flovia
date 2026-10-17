@@ -1,4 +1,4 @@
-const whatsappNumber = "919999999999";
+const whatsappNumber = "+917015505745";
 
 const whatsappMessage = encodeURIComponent(
   "Hi Flovia, I want to know more about your lead capture and follow-up system."
@@ -42,7 +42,7 @@ const steps = [
 
 export default function Home() {
   const whatsappNumber = "917015505745";
-  const demoUrl = "https://plot-landing.vercel.app/";
+  const demoUrl = "https://apex-academy-sable.vercel.app/";
 
   const whatsappMessage = encodeURIComponent(
     "Hi Flovia, I'd like to see a demo of your lead automation system."
@@ -75,7 +75,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-slate-950 transition hover:bg-slate-200"
             >
-              Get a Demo
+              Get a Demo on whatsapp
             </a>
           </div>
 
@@ -100,7 +100,7 @@ export default function Home() {
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
               Flovia helps businesses capture enquiries, organise leads and
-              automate follow-ups — so potential customers don&apos;t get
+              automate follow-ups — so potential customers won't get
               forgotten.
             </p>
 
@@ -220,7 +220,7 @@ export default function Home() {
               </h2>
 
               <p className="mt-5 max-w-lg leading-7 text-slate-600">
-                See how a real-estate business can capture enquiries and turn them
+                See how a coaching can capture enquiries and turn them
                 into organised leads ready for follow-up.
               </p>
 
@@ -230,7 +230,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="mt-8 inline-flex items-center rounded-xl bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-slate-800"
               >
-                View Real Estate Demo
+                View Coaching Demo
                 <span className="ml-2">↗</span>
               </a>
             </div>
@@ -241,7 +241,7 @@ export default function Home() {
                 <div className="flex items-center justify-between border-b border-slate-100 pb-5">
                   <div>
                     <p className="font-semibold text-slate-950">
-                      New Property Enquiry
+                      New Student Enquiry
                     </p>
                     <p className="mt-1 text-xs text-slate-500">
                       Lead captured from website
@@ -266,7 +266,7 @@ export default function Home() {
                       Interested In
                     </p>
                     <p className="mt-1 text-sm font-semibold text-slate-900">
-                      3 BHK Apartment
+                      JEE Course
                     </p>
                   </div>
 
@@ -488,6 +488,67 @@ export default function Home() {
             <p className="mt-4 text-sm font-semibold text-slate-900">
               — GRAM SCS
             </p>
+          </div>
+        </div>
+      </section>
+      {/* Additional Projects — added without changing existing sections */}
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+          <div className="mb-12">
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-600">
+              Selected Projects
+            </p>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+              Websites built for growing businesses.
+            </h2>
+            <p className="mt-4 max-w-2xl leading-7 text-slate-600">
+              Explore examples of websites built for businesses in real estate
+              and education.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            <article className="rounded-3xl border border-slate-200 bg-slate-50 p-8 transition hover:border-slate-300">
+              <span className="text-sm font-semibold text-blue-600">
+                Real Estate
+              </span>
+              <h3 className="mt-4 text-2xl font-bold text-slate-950">
+                Plot
+              </h3>
+              <p className="mt-3 leading-7 text-slate-600">
+                A real estate website designed to present property information
+                and help prospective buyers explore available opportunities.
+              </p>
+              <a
+                href="https://plot-landing.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+              >
+                View Live Website ↗
+              </a>
+            </article>
+
+            <article className="rounded-3xl border border-slate-200 bg-slate-50 p-8 transition hover:border-slate-300">
+              <span className="text-sm font-semibold text-blue-600">
+                Education
+              </span>
+              <h3 className="mt-4 text-2xl font-bold text-slate-950">
+                Apex Academy
+              </h3>
+              <p className="mt-3 leading-7 text-slate-600">
+                A coaching institute website designed to present educational
+                offerings and help prospective students learn about the academy.
+              </p>
+              <a
+                href="https://apex-academy-sable.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+              >
+                View Live Website ↗
+              </a>
+            </article>
           </div>
         </div>
       </section>
